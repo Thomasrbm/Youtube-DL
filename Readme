@@ -8,3 +8,16 @@ chmod a+rx ~/.local/bin/yt-dlp
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
+3/ 
+
+sudo apt update && sudo apt install ffmpeg -y
+
+
+
+
+COMMANDE ; 
+
+
+ yt-dlp "https://www.youtube.com/watch?v=C-nAzRLIKiQ" --download-sections "*17:00-18:10" -o "%(title)s.%(ext)s" --merge-output-format mp4
+
+[CMD] [youtube-link]  [section of time you want] [keep title] [output format]
